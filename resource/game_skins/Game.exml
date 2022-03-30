@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.Game"
+	 width="750"
+	height="1334" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="bg_jpg" left="0" top="0" right="0" bottom="0"/>
+	<e:Label id="gameTime" text="时间：50s" x="31.719" y="40.297" size="50"/>
+	<e:Label id="btnBack" text="Back" x="593.057" y="40.83" size="50" touchEnabled="true"/>
+</e:Skin>

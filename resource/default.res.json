@@ -1,8 +1,12 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png",
 			"name": "preload"
+		},
+		{
+			"keys": "kyo_png,music_bg_mp3,music_click_wav,music_wave_mp3,vdo_mp4,kyo_json,nico_jpg,bg_jpg",
+			"name": "game"
 		}
 	],
 	"resources": [
@@ -122,14 +126,44 @@
 			"name": "track_sb_png"
 		},
 		{
-			"url": "assets/bg.jpg",
+			"url": "img/nico.jpg",
 			"type": "image",
-			"name": "bg_jpg"
+			"name": "nico_jpg"
 		},
 		{
-			"url": "assets/egret_icon.png",
+			"url": "mc/kyo.png",
 			"type": "image",
-			"name": "egret_icon_png"
+			"name": "kyo_png"
+		},
+		{
+			"url": "sound/music_bg.mp3",
+			"type": "sound",
+			"name": "music_bg_mp3"
+		},
+		{
+			"url": "sound/music_click.wav",
+			"type": "sound",
+			"name": "music_click_wav"
+		},
+		{
+			"url": "sound/music_wave.mp3",
+			"type": "sound",
+			"name": "music_wave_mp3"
+		},
+		{
+			"url": "sound/vdo.mp4",
+			"type": "bin",
+			"name": "vdo_mp4"
+		},
+		{
+			"url": "mc/kyo.json",
+			"type": "json",
+			"name": "kyo_json"
+		},
+		{
+			"url": "img/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
 		}
 	]
 }

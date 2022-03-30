@@ -32,7 +32,8 @@ class Main extends eui.UILayer {
             this.stage.addChild(loadingView);
             await RES.loadConfig("resource/default.res.json", "resource/");
             await this.loadTheme();
-            await RES.loadGroup("preload", 0, loadingView);
+            // await RES.loadGroup("preload", 0, loadingView);
+            await RES.loadGroup("game", 0, loadingView);
             this.stage.removeChild(loadingView);
         }
         catch (e) {
@@ -64,6 +65,11 @@ class Main extends eui.UILayer {
 
     // START
     protected createGameScene(): void {
-        console.log('>> start here :', );
+        // 趣玩初始化（必须）
+        Qwan.init(this.stage)
+
+        // 默认跳到homeview
+        Qwan.stage.jump({route: 'HomeView'})
+        // Qwan.stage.jump({route: 'GameView'})
     }
 }

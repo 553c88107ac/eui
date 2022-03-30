@@ -24,5 +24,11 @@
     {
       "name": "promise"
     }
-  ]
+  ],
+  "eui": {
+    "exmlRoot": [
+      "resource/eui_skins",
+      "resource/game_skins"
+    ]
+  }
 }
