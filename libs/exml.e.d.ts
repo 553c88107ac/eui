@@ -55,6 +55,6 @@ declare module skins{
 	}
 }
 declare module skins{
-	class Result extends eui.Skin{
+	class Home extends eui.Skin{
 	}
 }

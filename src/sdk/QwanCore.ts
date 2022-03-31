@@ -362,10 +362,15 @@ namespace Qwan {
 
     // Event
     export class event {
-        public static tap(context, target, fn){
+        public static tap(context, target, fn, ext:any = {}){
             target.touchEnabled = true
-            target.addEventListener(egret.TouchEvent.TOUCH_TAP, (e)=>{
-                fn(e)
+            target.addEventListener(egret.TouchEvent.TOUCH_TAP, fn, context)
+
+            if (ext.silence) {
+                return
+            }
+            target.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>{
+                Qwan.media.playAudio('click_mp3')
             }, context)
         }
     }

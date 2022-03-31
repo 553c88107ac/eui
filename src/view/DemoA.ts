@@ -47,7 +47,7 @@ class DemoA extends egret.DisplayObjectContainer {
         const btnChangeStyle = Qwan.ui.makeBtn(this, [20, btnY, 200, 60], 'Change Style', {bgColor: 0x559933, radis: 10, color: 0xffffff, fontSize: 24, align: 'center', verticalAlign: 'middle'})
         // 点击更新按钮样式
         Qwan.event.tap(this, btnChangeStyle, ()=>{
-            Qwan.media.playAudio('music_click_wav')
+            Qwan.media.playAudio('click_mp3')
             Qwan.ui.updateBtn(btnChangeStyle, {radis:10, content: 'Clicked', color: 0xff4400, fontSize: 30, bgColor: 0x111111})
         })
 
@@ -83,7 +83,7 @@ class DemoA extends egret.DisplayObjectContainer {
         kyoMc.gotoAndStop(19);
         const btnWave = Qwan.ui.makeBtn(this, [30, 1050, 100, 60], 'Wave', {radis: 20})
         Qwan.event.tap(this, btnWave, ()=>{
-            Qwan.media.playAudio('music_wave_mp3')
+            Qwan.media.playAudio('wave_mp3')
             kyoMc.gotoAndPlay('wave', 1);
         })
 

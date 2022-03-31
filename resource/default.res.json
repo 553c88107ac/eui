@@ -5,7 +5,7 @@
 			"name": "preload"
 		},
 		{
-			"keys": "kyo_png,music_bg_mp3,music_click_wav,music_wave_mp3,vdo_mp4,kyo_json,nico_jpg,bg_jpg",
+			"keys": "kyo_png,kyo_json,nico_jpg,bg_jpg,bg_mp3,click_water_mp3,click_mp3,shining_mp3,wave_mp3",
 			"name": "game"
 		}
 	],
@@ -136,21 +136,6 @@
 			"name": "kyo_png"
 		},
 		{
-			"url": "sound/music_bg.mp3",
-			"type": "sound",
-			"name": "music_bg_mp3"
-		},
-		{
-			"url": "sound/music_click.wav",
-			"type": "sound",
-			"name": "music_click_wav"
-		},
-		{
-			"url": "sound/music_wave.mp3",
-			"type": "sound",
-			"name": "music_wave_mp3"
-		},
-		{
 			"url": "sound/vdo.mp4",
 			"type": "bin",
 			"name": "vdo_mp4"
@@ -164,6 +149,31 @@
 			"url": "img/bg.jpg",
 			"type": "image",
 			"name": "bg_jpg"
+		},
+		{
+			"url": "sound/bg.mp3",
+			"type": "sound",
+			"name": "bg_mp3"
+		},
+		{
+			"url": "sound/click.mp3",
+			"type": "sound",
+			"name": "click_mp3"
+		},
+		{
+			"url": "sound/click_water.mp3",
+			"type": "sound",
+			"name": "click_water_mp3"
+		},
+		{
+			"url": "sound/shining.mp3",
+			"type": "sound",
+			"name": "shining_mp3"
+		},
+		{
+			"url": "sound/wave.mp3",
+			"type": "sound",
+			"name": "wave_mp3"
 		}
 	]
 }

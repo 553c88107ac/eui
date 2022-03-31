@@ -6,7 +6,7 @@
 	<e:Label text="Game Name" y="281.133" size="60" textColor="0xFFEE96" horizontalCenter="0.5"/>
 	<e:Group x="265" y="768.258" id="btnGame" touchEnabled="true" touchChildren="true">
 		<e:Rect width="220" height="80" y="0" fillColor="0xEF822D" enabled="true" touchEnabled="true" touchChildren="true" x="0"/>
-		<e:Label text="to game" y="18.7" size="50" textColor="0xFFFFFF" horizontalCenter="0"/>
+		<e:Label text="to game" y="18.7" size="40" textColor="0xFFFFFF" horizontalCenter="0"/>
 	</e:Group>
 	<e:Group id="btnDemoA" x="265" y="881.34" touchEnabled="true" touchChildren="true">
 		<e:Rect width="220" height="80" y="0" fillColor="0xEF822D" enabled="true" touchEnabled="true" touchChildren="true" x="0"/>

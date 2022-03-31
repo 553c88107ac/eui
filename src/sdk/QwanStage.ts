@@ -10,10 +10,10 @@ namespace Qwan {
         }
 
         // goto some view
-        public static goto(context, target, data){
+        public static goto(context, target, data, ext:any={}){
             Qwan.event.tap(context, target, ()=>{
                 Qwan.StageManager.instance.gotoView(data)
-            })
+            }, ext)
         }
         
         // // show layer
@@ -26,6 +26,9 @@ namespace Qwan {
             Qwan.event.tap(context, target, ()=>{
                 Qwan.StageManager.instance.closeView(data)
             })
+        }
+        public static get(stageName){
+            return Qwan.StageManager.instance.viewStore[stageName]
         }
     }
 
@@ -95,7 +98,7 @@ namespace Qwan {
     
             // 3. show instance and record it
             this.addChild(insView)
-            insView.start && insView.start(evtData.data || {})
+            insView.start && insView.start(evtData)
             this.lastView = insView
             this.lastViewName = evtData.route
         }
@@ -121,10 +124,10 @@ namespace Qwan {
             let elLayer
             // 如果展示整个实例，直接调用start渲染数据
             if (layerName === 'all') {
-                insView['start'](evtData.data || {})
+                insView['start'](evtData)
                 elLayer = insView
             }else {
-                elLayer = insView[layerName](evtData.data || {})
+                elLayer = insView[layerName](evtData)
             }
             StageManager.mainStage.addChild(elLayer)
             this.layerStore[`${view}_${layerName}`] = elLayer
